@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Attribute Selector</title>
+    <style>
+        input[type="text"] {
+            background-color: blue;
+            color: white;
+        }
+        
+        input[type="password"] {
+            background-color: red;
+            color: white;
+        }
+        
+        input[type="submit"] {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>UserName</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><label>Confirm-Password</label></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

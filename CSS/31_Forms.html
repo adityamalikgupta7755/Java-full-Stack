@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>HTML FORMS</title>
+    <style>
+        div{
+            background-color: peru;
+            width: 30%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM</h1>
+    <div>
+        <form >
+            <label>User Name</label>
+            <input type="text">
+            <label >Password</label>
+            <input type="password">
+            <input type="submit">
+        </form>
+    </div>
+    <h1>Text Area</h1>
+    <div>
+        <form >
+            <label>Enter A Feedback</label>
+            <textarea cols="20" rows="3"></textarea>
+        </form>
+    </div>
+    <h1>Select & Option</h1>
+    <div>
+        <form >
+            <label>Select a City</label>
+            <select>
+                <option>---Select---</option>
+                <option>Banglore</option>
+                <option>Mumbai</option>
+                <option>Chenni</option>
+            </select>
+        </form>
+    </div>
+    <h1>Data List</h1>
+    <div>
+        <form >
+            <label>Select a City</label>
+            <input List="city">
+            <datalist id="city">
+                <option>---Select---</option>
+                <option>Banglore</option>
+                <option>Mumbai</option>
+                <option>Mysore</option>
+                <option>Manglore</option>
+                <option>Chenni</option>
+            </datalist>
+        </form>
+    </div>
+    <h1>FORM Input Type --> Reset</h1>
+    <div>
+        <form >
+            <label>User Name</label>
+            <input type="text">
+            <label >Password</label>
+            <input type="password">
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </div>
+    <h1>FORM Input Type --> Radio</h1>
+    <div>
+        <form >
+            <label>Is HTML is EASY ?</label>
+            <input type="radio" name="a1">Yes
+            <input type="radio" name="a1">No
+        </form>
+    </div>
+    <h1>FORM Input Type --> Checkbox</h1>
+    <div>
+        <form >
+            <label>Select your hobbies</label>
+            <input type="checkbox" >Coding
+            <input type="checkbox" >Eating
+            <input type="checkbox" >Sleeping
+        </form>
+    </div>
+    <h1>FORM Input Type --> Color</h1>
+    <div>
+        <form >
+            <label>Color Picker</label>
+            <input type="color" >
+        </form>
+    </div>
+    <h1>FORM Input Type --> DateTime-Local</h1>
+    <div>
+        <form >
+            <label>Local Date Time</label>
+            <input type="datetime-local" >
+        </form>
+    </div>
+    <h1>FORM Input Type --> Number</h1>
+    <div>
+        <form >
+            <label>Enter Mobile</label>
+            <input type="number" >
+        </form>
+    </div>
+    <h1>FORM Input Type --> Email</h1>
+    <div>
+        <form >
+            <label>Enter Email</label>
+            <input type="email" >
+            <input type="submit">
+        </form>
+    </div>
+    <h1>FORM Input Type --> Week</h1>
+    <div>
+        <form >
+            <label>Weekly chart</label>
+            <input type="week" >
+        </form>
+    </div>
+    <h1>FORM Input Type --> Time</h1>
+    <div>
+        <form >
+            <label>Time</label>
+            <input type="time" >
+        </form>
+    </div>
+    <h1>FORM Input Type --> Email Removing Validation</h1>
+    <div>
+        <form  novalidate>
+            <label>Enter Email</label>
+            <input type="email" >
+            <input type="submit">
+        </form>
+    </div>
+    <h1>FORM Value Attribute</h1>
+    <div>
+        <form >
+            <label>Enter User Name</label>
+            <input type="text" value="Aditya">
+            <input type="submit">
+        </form>
+    </div>
+    <h1>FORM Value  with Readonly Attribute</h1>
+    <div>
+        <form >
+            <label>Enter User Name</label>
+            <input type="text" value="Aditya" readonly>
+            <input type="submit">
+        </form>
+    </div>
+    <h1>FORM Value & Readonly, Disabled Attribute</h1>
+    <div>
+        <form >
+            <label>Enter User Name</label>
+            <input type="text" value="Aditya" readonly disabled>
+            <input type="submit">
+        </form>
+    </div>
+    <h1>FORM Placeholder Attribute</h1>
+    <div>
+        <form>
+            <input type="text"  placeholder="Enter User Name">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
