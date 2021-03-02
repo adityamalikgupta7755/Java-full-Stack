@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>HTML FORM WITH TABLE</title>
+   <style>
+       div{
+           position: relative;
+           top: 50px;
+           left: 350px;
+           width: 300px;
+       }
+       fieldset{
+           background-color: blue;
+           color: white;
+           border: 5px inset steelblue ;
+           /* border-radius: 20px; */
+           box-shadow: 0 2px 15px red;
+       }
+       legend{
+           border: 2px solid yellowgreen;
+           background-color: darkgreen;
+           padding: 5px;
+           border-radius: 10px;
+       }
+       h1{
+           text-align: center;
+       }
+       input[type="submit"]{
+           margin-top: 10px;
+           color: white;
+           background-color: green;
+           padding: 5px;
+           border-radius: 5px;
+       }
+   </style>
+</head>
+<body>
+    <h1>HTML FORM WITH TABLE</h1>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Login Here</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                User Name
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Password</label>
+                        </td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" >
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
