@@ -1,0 +1,100 @@
+
+        #main-box {
+            border: 2px solid black;
+            padding: 20px;
+            width: 95%;
+            margin-top: 20px;
+
+        }
+
+        .mini-box {
+            border: 2px solid black;
+            box-shadow: 0 0 2px black;
+            width: 90%;
+            margin: 20px auto ;
+            padding: 20px;
+            /* background: transparent; */
+
+        }
+
+        .mini-box h3,
+        h3 {
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        .dash {
+            border: none;
+            outline: none;
+            margin: 10px 10px 0px 0px;
+            border-bottom: 2px solid black;
+        }
+        .dash-xlarg{
+            width: 643px;
+        }
+        .dash-larg{
+            width: 558px;
+        }
+        .dash-small{
+            width: 450px;
+        }
+        .dash-mini-small{
+            width: 395px;
+        }
+        .dash-mvery-small{
+            width: 320px;
+        }
+        .dash-very-small{
+            width: 345px;
+        }
+        .dash-ultr-small{
+            width: 293px;
+        }
+        .small{
+            width: 133px;
+        }
+        .box {
+            width: 30px;
+            height: 25px;
+            text-align: center;
+            margin : 10px 4px;
+        }
+
+        .mini-box #dot {
+            border: none;
+            outline: none;
+            border-bottom: 2px dotted black;
+            width: 30px;
+
+        }
+        .mini-box tr td label{
+            margin: 0px 100px 0px 0px;
+        }
+        #mini-table tr td label{
+            margin: 0px 0px 0px 0px;
+        }
+        #mini-table tr td {
+            border: 2px solid black;
+            width: 50%;
+            padding-left: 10px;
+        }
+
+        #mini-table {
+            width: 95%;
+            border-collapse: collapse;
+            
+        }
+        #mini-table .bg-less{
+            border: none;
+            outline: none;
+            height: 30px;
+            background: transparent;
+        }
+        .spac{
+            margin-left: 30px;
+        }
+        p{
+            margin: 0px 0px -20px 25px;
+            font-size: 18px;
+        }
+    

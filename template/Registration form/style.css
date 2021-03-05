@@ -1,0 +1,52 @@
+body{
+    background-color: blue;
+    background-image: url('mout-bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-box{
+    /* border: 5px solid black; */
+    width: 250px;
+    background: linear-gradient(45deg, orange, blue, green);
+    margin: 100px auto;
+    text-align: center;
+    box-shadow: 0 0 10px blue;
+    border-radius: 20px;
+}
+.form-group input[type="text"],.form-group input[type="email"],.form-group input[type="password"], select
+{
+    border: none;
+    outline: none;
+    width: 170px;
+    height: 20px;
+    /* padding: 10px; */
+    background:transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-top: 30px;
+    font-size: 15px;
+}
+::placeholder{
+    color: white;
+}
+.form-group select{
+    width: 174px;
+    background:transparent;
+}
+.form-group input[type='submit']{
+    margin: 30px 5px;
+    width: 173px;
+    padding: 5px;
+    background: linear-gradient(135deg, orange, blue, green);
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+}
+#icon img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    box-shadow: 0 0 10px blue;
+}

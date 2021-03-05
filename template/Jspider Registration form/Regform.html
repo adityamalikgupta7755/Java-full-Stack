@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>J Spider Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div id="main-box">
+            <fieldset class="mini-box">
+                <h3>General Details (FILL THIS FORM IN UPPERCASE ONLY)</h3>
+                <table>
+                    <tr>
+                        <td><label>FULL NAME:</label></td>
+                        <td><input type="text" class="dash dash-larg"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td><input type="checkbox" name="gender" class="box">Female
+                            <input type="checkbox" name="gender" class="box">Male
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Date of Birth:</label></td>
+
+                        <td><input type="number" placeholder="d" class="box">
+                            <input type="number" placeholder="d" class="box">
+                            <input type="number" placeholder="m" class="box">
+                            <input type="number" placeholder="m" class="box">
+                            <input type="number" placeholder="y" class="box">
+                            <input type="number" placeholder="y" class="box">
+                            <input type="number" placeholder="y" class="box">
+                            <input type="number" placeholder="y" class="box">
+                            (dd/mm/yyyy)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label> Mobile No:</label></td>
+                        <td>+91
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label> Mobile No:(Repeat)</label></td>
+                        <td>+91
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                            <input type="number" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Email ID:(UPPERCASE)</label></td>
+                        <td><input type="email" class="dash dash-larg"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email ID:(Repeat)</label></td>
+                        <td><input type="email" class="dash dash-larg"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <h3>Educational Details</h3>
+            <fieldset class="mini-box">
+                <table>
+                    <tr>
+                        <td>10
+                            <sup>th</sup><input type="text" id="dot">
+                            SSLC[State board]
+                            <input type="checkbox" class="box">
+                            CBSE
+                            <input type="checkbox" class="box">
+                            ICSE
+                            <input type="checkbox" class="box">
+                            IGCSE
+                            <input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Year of pass out :</label>
+                            <input type="month" class="dash">
+                            Aggregate % :
+                            <input type="number" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <table id="mini-table">
+                            <tr>
+                                <td>PUC/12 <sup>th</sup>:
+                                    <input type="text" class="bg-less">
+                                </td>
+                                <td>Diploma:
+                                    Regular
+                                    <input type="checkbox" class="box">
+                                    Correspondence
+                                    <input type="checkbox" class="box">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Aggregate %:
+                                    <input type="number" class="bg-less">
+                                </td>
+                                <td>Aggregate %(All Sem):
+                                    <input type="number" class="bg-less">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Year of pass-out:
+                                    <input type="month" class="bg-less">
+                                </td>
+                                <td>
+                                    Year of pass-out:
+                                    <input type="month" class="bg-less">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    College Name :
+                                    <input type="text" class="bg-less">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <label>Diploma,</label>
+                                    CSe
+                                    <input type="checkbox" class="box">
+                                    IT
+                                    <input type="checkbox" class="box">
+                                    IS
+                                    <input type="checkbox" class="box">
+                                    EEE
+                                    <input type="checkbox" class="box">
+                                    EC
+                                    <input type="checkbox" class="box">
+                                    Mech
+                                    <input type="checkbox" class="box">
+                                    Civil
+                                    <input type="checkbox" class="box">
+                                    other
+                                    <input type="text" class="dash">
+                                </td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            If ITI ITI Year of pass-out:
+                            <input type="text" class="dash">
+                        </td>
+                        <td colspan="3">
+                            %:
+                            <input type="number" class="dash">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <h3>Degree:
+                Regular
+                <input type="checkbox" class="box">
+                Correspondence
+                <input type="checkbox" class="box">
+            </h3>
+            <fieldset class="mini-box">
+                <table>
+                    <tr>
+                        <td>
+                            Degree:
+                            BE <input type="checkbox" class="box">
+                            B-Tech <input type="checkbox" class="box">
+                            B.Sc <input type="checkbox" class="box">
+                            BCA <input type="checkbox" class="box">
+                            B.Com <input type="checkbox" class="box">
+                            BBM <input type="checkbox" class="box">
+                            BA <input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            C.Sc <input type="checkbox" class="box">
+                            IT <input type="checkbox" class="box">
+                            Inf.Sc <input type="checkbox" class="box">
+                            Eelectrical <input type="checkbox" class="box">
+                            EC <input type="checkbox" class="box">
+                            Mech <input type="checkbox" class="box">
+                            Civil <input type="checkbox" class="box">
+                            AI <input type="checkbox" class="box">
+                            Bio-Med <input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Bio-Tech <input type="checkbox" class="box">
+                            Chemical <input type="checkbox" class="box">
+                            Envi <input type="checkbox" class="box">
+                            Bio-Tech <input type="checkbox" class="box">
+                            Telecom <input type="checkbox" class="box">
+                            Instrumentation
+                            <input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Other: <input type="text" class="dash">
+
+                            YOP:<input type="month" class="dash">
+
+                            Percentage(1 to 8 sem):
+                            <input type="number" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            University:
+                            <input type="text" class="dash dash-very-small">
+                            University Roll(USN) No:
+                            <input type="number" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            College Name:
+                            <input type="text" class="dash dash-small">
+                            Place:
+                            <input type="text" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Did you Fail and then clear the subject in degree:
+                            YES<input type="checkbox" class="box">
+                            NO<input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Have any existing backlogs:
+                            yes<input type="checkbox" class="box">
+                            No<input type="checkbox" class="box">
+                            Got year gap in degree:
+                            YES<input type="checkbox" class="box">
+                            NO<input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div id="main-box">
+            <h3>Master degree or Post graduation:
+                Regular
+                <input type="checkbox" class="box">
+                Correspondence
+                <input type="checkbox" class="box">
+            </h3>
+            <fieldset class="mini-box">
+                <table>
+                    <tr>
+                        <td>
+                            M.Tech <input type="checkbox" class="box">
+                            MCA <input type="checkbox" class="box">
+                            M.Sc <input type="checkbox" class="box">
+                            MBA <input type="checkbox" class="box">
+                            MS <input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Stream:
+                            C.SC <input type="checkbox" class="box">
+                            IT <input type="checkbox" class="box">
+                            IS <input type="checkbox" class="box">
+                            EEE <input type="checkbox" class="box">
+                            EC <input type="checkbox" class="box">
+                            Mech <input type="checkbox" class="box">
+                            Civil <input type="checkbox" class="box">
+                            Others: <input type="text" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aggregate %: if CGPA:
+                            <input type="number" class="dash small">
+                            Percentage: <input type="number" class="dash small">
+                            Year of pass-out:
+                            <input type="month" class="dash small">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            University Name:
+                            <input type="text" class="dash dash-ultr-small">
+                            University Registration No:
+                            <input type="number" class="dash">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            College Name:
+                            <input type="text" class="dash dash-small">
+                            Place:
+                            <input type="text" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Did you Fail and then clear the subject in degree:
+                            YES<input type="checkbox" class="box">
+                            NO<input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Have any existing backlogs:
+                            yes<input type="checkbox" class="box">
+                            No<input type="checkbox" class="box">
+                            Got year gap in degree:
+                            YES<input type="checkbox" class="box">
+                            NO<input type="checkbox" class="box">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+            <fieldset class="mini-box">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            Certifications: <input type="text" class="dash dash-very-small">(Only international
+                            certified s/w certifications)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Ready to relocate to work:
+                            Yes <input type="checkbox" class="box">
+                            No <input type="checkbox" class="box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            If yes, preferred location:
+                        </td>
+                        <td>
+                            <input type="checkbox" class="box">Bengaluru
+                            <input type="checkbox" class="box">Chennai
+                            <input type="checkbox" class="box">Hyderabad
+                            <input type="checkbox" class="box">Kerala
+                            <input type="checkbox" class="box">Pune
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" class="box">Mumbai
+                            <input type="checkbox" class="box">Delhi
+                            <input type="checkbox" class="box">Gandhinagar
+                            <span class="spac"> Other: </span><input type="text" class="dash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Do you have Passport?
+                            <input type="checkbox" class="box">Yes
+                            <input type="checkbox" class="box">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Do you have Pan card?
+                            <input type="checkbox" class="box">Yes
+                            <input type="checkbox" class="box">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Do you have Adar card?
+                            <input type="checkbox" class="box">Yes
+                            <input type="checkbox" class="box">No
+                            <span class="spac">Adar No: <input type="number" class="dash dash-very-small"></span>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <p>Address: </p>
+            <fieldset class="mini-box">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            Father/Husband's Name:
+                            <input type="text" class="dash dash-xlarg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            House No: <input type="number" class="dash dash-very-small">
+                        </td>
+                        <td>
+                            street No: <input type="number" class="dash dash-ultr-small">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Area Name: <input type="text" class="dash dash-very-small">
+                        </td>
+                        <td>
+                            Pin code: <input type="number" class="dash dash-ultr-small">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City:<input type="text" class="dash dash-mini-small">
+                        </td>
+                        <td>
+                            State:<input type="text" class="dash dash-mvery-small">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+body{
+    background-image: url('https://thumbs.dreamstime.com/b/top-view-wooden-texture-table-top-view-wooden-texture-table-using-background-wallpaper-your-design-164051266.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Dancing Script', cursive;
+}
+h1, legend{
+    font-family: 'Fredericka the Great', cursive;
+    
+}
+h1{
+    text-align: center;
+    
+}
+fieldset legend{
+    border: 2px solid white;
+    border-radius: 0px 10px 0px 10px;
+    background-color:  rgba(0, 0, 0, 0.7);
+    padding: 8px;
+}
+fieldset{
+   border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+input:focus , textarea:focus {
+   background-color: rgba(255, 153, 0, 0.341);
+   color: white;
+}
+input[type="text"],input[type="number"],input[type="date"],input[type="month"], select{
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 150px;
+    margin: 5px 0px;
+    border-radius: 5px;
+   
+}
+textarea{
+   border: none;
+   outline: none;
+   width: 150px;
+   height: 50px;
+   margin: 5px 0px;
+   border-radius: 5px;
+} 
+input[type="radio"],input[type="checkbox"]{
+   margin: 5px 7px;
+}
+td label{
+    margin: 0px 23px;
+}
+
+.spac tr td input{
+    margin: 2px 36px;
+}
+.spac tr td textarea{
+    margin: 2px 36px;
+}
+
+#oth tr td{
+   padding: 5px 104px 5px 0px;
+}
+#oth tr td input[type="checkbox"]{
+   margin: 0px 2px 0px 24px;
+}
+input[type="submit"],input[type="reset"]{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 20px;
+    border-radius: 0px 10px 0px 10px;
+    background-color:  rgba(0, 0, 0, 0.7);
+}
