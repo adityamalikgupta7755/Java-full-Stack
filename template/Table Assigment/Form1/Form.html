@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assigment 7</title>
+    <style>
+        body {
+            background-color: #b3dee7;
+        }
+
+        #second-box {
+            text-align: center;
+            line-height: 8px;
+            border-bottom: 2px solid black;
+        }
+
+        #form-box h1 {
+            text-align: center;
+        }
+
+        #main-box table {
+            margin: 0px auto;
+        }
+
+        td label {
+            margin: 0px 12px;
+        }
+
+        td input,
+        textarea {
+            margin: 2px 11px 2px 0px;
+        }
+
+        td input[type="checkbox"] {
+            margin-left: 14px;
+        }
+
+        td input[type="Submit"] {
+            margin-left: 221px;
+        }
+
+        td input[type="Reset"] {
+            margin-left: -10px;
+        }
+
+        td select {
+            width: 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-box">
+        <div id="second-box">
+            <h1>Student Name: XYZ</h1>
+            <h1>Student Id: 0000000000000</h1>
+        </div>
+        <div id="form-box">
+            <form>
+                <h1>Registration Form</h1>
+                <table>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text"></td>
+                        <td><label>CNIC</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Course</label></td>
+                        <td><input type="text"></td>
+                        <td><label>Session</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><input type="email"></td>
+                        <td><label>Password</label></td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Address</label></td>
+                        <td><textarea cols="25" rows="3"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" name="gen" id="">Male
+                            <input type="radio" name="gen" id="">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>City</label></td>
+                        <td><select name="" id="">
+                                <option>----Select-----</option>
+                                <option>Delhi</option>
+                                <option>Mumbai</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><label> New Student</label></td>
+                        <td><input type="checkbox"></td>
+                        <td><label>Continuing Student</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="Submit"></td>
+                        <td><input type="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

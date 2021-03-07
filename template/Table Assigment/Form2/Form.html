@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assigment 8</title>
+    <script src="https://kit.fontawesome.com/e13b83aede.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #356aa0;
+            color: white;
+            font-size: 20px;
+        }
+        fieldset{
+            width: 600px;
+            margin: 100px auto;
+            border: 2px solid white;
+        }
+        table{
+            padding: 20px 30px;
+        }
+        input[type="number"],input[type="text"],select{
+            width: 50px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin: 8px;
+        }
+        input[type="text"]{
+            width: 280px;
+        }
+        .aling{
+            text-align: right;
+        }
+        form div{
+            margin: -80px 0px 0px 605px;
+        }
+        div i{
+            color: #b5da23;
+            background-color: white;
+            border-radius: 100%;
+            font-size: 30px;
+            margin: 0px 5px ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Registration Details</legend>
+                <table>
+                    <tr>
+                        <td class="aling"><label>University:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="aling"><label>Institute:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="aling"><label>Branch:</label></td>
+                        <td><select style="width: 180px;">
+                                <option>---Select---</option>
+                                <option>CSE</option>
+                                <option>ME</option>
+                                <option>EC</option>
+                                <option>EEE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="aling"><label>Degree:</label></td>
+                        <td>
+                            <select style="width: 100px;">
+                                <option>---Select---</option>
+                                <option>B-tech</option>
+                                <option>M-Tech</option>
+                                <option>MCA</option>
+                                <option>BCA</option>
+                            </select>
+                        
+                        <input type="radio" name="Deg" id="">Pursuing
+                        <input type="radio" name="Deg" id="">Completed</td>
+                    </tr>
+                    <tr>
+                        <td class="aling"><label>Avarage CPI:</label></td>
+                        <td><input type="number"> Upto
+                        <input type="number"> Th Semester</td>
+                    </tr>
+                    <tr>
+                        <td class="aling"><label>Experience:</label></td>
+                        <td><input type="number">Years</td>
+                    </tr>
+                    <tr>
+                        <td class="aling"><label>Your Website Or Blog:</label></td>
+                        <td><input type="text" value="http://"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div>
+                <i class="fas fa-play-circle fa-flip-horizontal"></i>
+                <span>Step 2</span>
+                <i class="fas fa-play-circle"></i>
+            </div>
+        </form>
+       
+    </div>
+</body>
+
+</html>
