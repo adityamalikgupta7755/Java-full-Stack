@@ -32,7 +32,10 @@ body{
 }
 .form-group select{
     width: 174px;
-    background:transparent;
+}
+.form-group select:focus{
+    background:rgba(0, 0, 255, 0.253);
+    color:rgb(7, 3, 3);
 }
 .form-group input[type='submit']{
     margin: 30px 5px;
@@ -42,11 +45,13 @@ body{
     box-shadow: 0 0 10px white;
     border-radius: 10px;
 }
-#icon img{
-    width: 100px;
-    height: 100px;
+#icon{
+    font-size: 100px;
     margin-top: -50px;
-    border-radius: 50%;
-    border: 5px solid blue;
-    box-shadow: 0 0 10px blue;
+    color: rgb(255, 255, 255);
 }
+/* #icon {
+    border-radius: 100%;
+    
+    box-shadow: 0 0 10px rgb(192, 192, 214);
+} */

@@ -4,6 +4,7 @@
             padding: 20px;
             width: 95%;
             margin-top: 20px;
+            font-size: 25px;
 
         }
 
@@ -28,24 +29,22 @@
             outline: none;
             margin: 10px 10px 0px 0px;
             border-bottom: 2px solid black;
-        }
-        .dash-xlarg{
-            width: 643px;
+            width: 230px;
         }
         .dash-larg{
-            width: 558px;
+            width: 800px;
         }
         .dash-small{
-            width: 450px;
+            width: 541px;
         }
         .dash-mini-small{
-            width: 395px;
+            width: 537px;
         }
         .dash-mvery-small{
             width: 320px;
         }
         .dash-very-small{
-            width: 345px;
+            width: 460px;
         }
         .dash-ultr-small{
             width: 293px;
@@ -54,10 +53,10 @@
             width: 133px;
         }
         .box {
-            width: 30px;
-            height: 25px;
+            width: 68px;
+            height: 40px;
             text-align: center;
-            margin : 10px 4px;
+            margin: 10px -4px;
         }
 
         .mini-box #dot {
@@ -68,7 +67,7 @@
 
         }
         .mini-box tr td label{
-            margin: 0px 100px 0px 0px;
+            margin: 0px 20px 0px 0px;
         }
         #mini-table tr td label{
             margin: 0px 0px 0px 0px;
@@ -97,4 +96,9 @@
             margin: 0px 0px -20px 25px;
             font-size: 18px;
         }
-    
+        span{
+            margin: 0px 15px;
+        }
+        .t{
+            margin: 0px 70px;
+        }

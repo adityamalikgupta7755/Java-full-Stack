@@ -7,10 +7,12 @@ body{
     color: white;
     font-family: 'Dancing Script', cursive;
     letter-spacing: 1px;
+    font-size: 25px;
 }
 h1{
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
+    font-size: 35px;
 }
 fieldset
 {
@@ -18,6 +20,8 @@ fieldset
     border: 2px solid white;
     border-radius: 20px;
     margin-top: 20px;
+    
+    
 }
 fieldset legend{
     background-color: rgba(0, 0, 0, 0.7);
@@ -34,7 +38,7 @@ input[type="text"],input[type="number"],input[type="date"],input[type="month"],i
     border-radius: 6px;
 }
 textarea{
-    height: 50px;
+    height: 60px;
 }
 input:focus, textarea:focus{
     color: wheat;
@@ -42,18 +46,19 @@ input:focus, textarea:focus{
     font-weight: 600;
 }
 table tr td{
-    padding: 5px 10px 5px 2px;
+    padding: 5px 37px 5px 2px;
 }
 .spac tr td{
-    padding: 5px 24px ;
+    padding: 5px 55px ;
 }
 #oth tr td{
-    padding: 5px 89px  5px 0px;
+    padding: 5px 141px  5px 0px;
 }
 input[type="submit"],input[type="reset"]{
     color: white;
     border: 2px solid white;
-    padding: 5px 20px;
-    border-radius: 0px 10px 0px 10px;
+    padding: 10px 44px;
+    border-radius: 0px 35px 0px 35px;
     background-color:  rgba(0, 0, 0, 0.7);
+    font-size: 24px;
 }
