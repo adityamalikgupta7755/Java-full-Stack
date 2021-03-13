@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temple Animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            position: relative;
+            top: 100px;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            box-shadow: 0 0 20px whitesmoke;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        div img{
+            width: inherit;
+            height: inherit;
+            transition: all 2s linear 4s;
+            
+        }
+        div:hover img
+        {
+            transform: perspective(200px) scale(1.2, 1.2);
+        }
+        div #screen{
+            position: absolute;
+            top: 0px;
+            width: inherit;
+            height: inherit;
+            /* background-color: rgba(0, 0, 0, 0.877); */
+            transition: all 2s linear 2s;
+            box-shadow: 0 0 10px #c41114;
+        }
+        div:hover #screen{
+            transform: translateY(-410px);
+        }
+        div #left-door{
+            position: absolute;
+            top: 0px;
+            width: 50%;
+            height: inherit;
+            box-shadow: none;
+            border-radius: 0px;
+        }
+        div #left-door img{
+            transform-origin: left;
+            transition: all 5s linear;
+            width: 100%;
+        }
+        div:hover #left-door img
+        {
+            transform: perspective(200px) rotateY(90deg);
+        }
+        div #right-door{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            width: 50%;
+            height: inherit;
+            box-shadow: none;
+            border-radius: 0px;
+            
+        }
+        div #right-door img{
+            transform-origin: right;
+            transition: all 5s linear;
+            width: 100%;
+        }
+        div:hover #right-door img
+        {
+            transform: perspective(200px) rotateY(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="Lord shiva.jpg" alt="">
+        <div id="screen">
+            <img src="screen1.png" alt="">
+        </div>
+        <div id="left-door">
+            <img src="left-door.png" alt="">
+        </div>
+        <div id="right-door">
+            <img src="right-door.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -7,12 +7,15 @@
         #nav-bar {
             /* border: 3px solid rgb(0, 0, 12); */
             border-radius: 25px;
-            padding: 10px 0px;
+            padding: 15px 0px;
             background: rgb(61, 2, 2);
             /* background: radial-gradient(circle, rgba(61, 2, 2, 1) 0%, rgba(255, 0, 0, 1) 100%, rgba(60, 2, 2, 1) 100%); */
             background-image: radial-gradient(circle, #567a05, #6c9905, #82ba04, #99dc02, #b1ff00);
+            /* position: sticky; */
+            /* top: 0px; */
+            box-shadow: 0 0 8px greenyellow;
         }
-        
+
         a {
             color: white;
             /* border: 1px solid red; */
@@ -24,76 +27,275 @@
             margin-left: 100px;
             text-decoration: none;
         }
-        
+
         a:hover {
             color: blue;
             text-shadow: 3px 3px 15px white;
         }
-        
+
         #header-banner {
             /* border: 3px solid black; */
             border-radius: 20px;
-            margin-top: 5px;
-            height: 400px;
-            background: blueviolet url('./Image/bg.jpeg') no-repeat fixed center;
+            margin-top: 15px;
+            height: 500px;
+            background: blueviolet url('./Image/bg2.jpg') no-repeat fixed center;
             background-size: cover;
+            box-shadow: 0 0 8px greenyellow;
+
         }
-        
+
         h1 {
             position: relative;
             display: inline-block;
             width: 309px;
             padding: 5px;
             border-radius: 10px;
-            background-color: rgba(154, 205, 50, 0.4);
-            top: 300px;
+            background-color: rgba(153, 205, 50, 0.596);
+            top: 350px;
             left: 480px;
             color: #fff;
         }
-        #card table{
+
+        #card-container table {
             width: 100%;
             margin-top: 50px;
         }
-        #card table tr td{
+
+        #card-container table tr td {
             width: 25%;
-            height:400px;
-            border: 2px solid black;
-            border-radius: 20px;
+            height: 400px;
+            /* border: 2px solid black; */
         }
-        #card table tr td img{
+
+        #card-container table tr td .card {
             position: relative;
-            top: -99px;
-            width: 100%;
-            height: 300px;
+            top: 5px;
+            width: 80%;
+            height: 380px;
+            margin: 0px auto;
             border-radius: 20px;
+            /* border: 2px solid black; */
+            box-shadow: 0 0 10px greenyellow;
+        }
+
+        .card img {
+            width: 260px;
+            height: 200px;
+            border-radius: 20px 20px 0px 0px;
+            /* border: 2px solid red; */
+        }
+
+        .card .content {
+            width: 260px;
+            height: 165px;
+            line-height: 10px;
+            text-align: center;
             /* border: 2px solid blue; */
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        .card .content span {
+            background-color: #6c9905;
+            color: white;
+            font-size: 18px;
+            margin: 10px auto;
+            padding: 5px 70px;
+            border-radius: 30px 0 30px 0;
+        }
+        #Quits{
+            margin-top: 50px;
+            background: blueviolet url('./Image/bg3.png') no-repeat fixed center;
+            background-size: cover;
+        }
+        #Quits p{
+            text-align: center;
+            text-transform: capitalize;
+            padding: 50px;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            word-spacing: 10px;
+            line-height: 50px;
+            text-shadow: 0 0 10px darkgreen;
+        }
+        #Quits p span{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #contact{
+            display: inline-block;
+            width: 100%;
+            border: 2px solid blue;
+            height: 400px;
+        }
+        #contact-form{
+            display: inline-block;
+            width: 50%;
+            border: 2px solid yellow;
+        }
+        #contact #map{
+            display: inline-block;
+            width: 300px;
+            height: 200px;
         }
     </style>
 </head>
 
 <body>
 
+    <div id="nav-bar">
+        <a href="#">home</a>
+        <a href="#">about us</a>
+        <a href="#">gallery</a>
+        <a href="#">services</a>
+        <a href="#">contact us</a>
+    </div>
+    <div id="header-banner">
+        <h1>Welcome To Go Green</h1>
+    </div>
+    <div id="card-container">
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img src="Image/item1.webp" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                            <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <img src="Image/item2.jpg" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                             <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <img src="Image/item3.jpg" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                             <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <img src="Image/item4.jpg" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                            <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="card-container">
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img src="Image/item5.jfif" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                              <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <img src="Image/item6.jpg" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                              <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <img src="Image/item7.jfif" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                            <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="card">
+                        <img src="Image/item8.jpeg" alt="">
+                        <div class="content">
+                            <h2>Name</h2>
+                            <p>Description</p>
+                            <span>Deal of Day</span>
+                            <h2>Rs 00.00</h2>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="Quits">
+        <p>" A society grows great when old men plant trees 
+            <br>whose shade they know they shall never sit in. "<br>
+            <span>by :– Greek proverb</span></p>
+    </div>
+    <div id="contact">
+        <div id="contact-form">
+            <form>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No.</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td><textarea name="" id="" cols="30" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.938549675629!2d83.06979381436267!3d26.778228672314594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991252c22f8c33f%3A0xb5efd9b7cda668b6!2sHarsh%20Trading%20Company!5e0!3m2!1sen!2sin!4v1615351574714!5m2!1sen!2sin"></iframe>
+        </div>
+    </div>
+    <div style="margin-bottom: 500px;"></div>
 </body>
-<div id="nav-bar">
-    <a href="#">home</a>
-    <a href="#">about us</a>
-    <a href="#">gallery</a>
-    <a href="#">services</a>
-    <a href="#">contact us</a>
-</div>
-<div id="header-banner">
-    <h1>Welcome To Go Green</h1>
-</div>
-<div id="card">
-    <table>
-        <tr>
-            <td>
-                <img src="Image/item1.webp" alt="">
-            </td>
-            <td><img src="Image/item1.webp" alt=""></td>
-            <td><img src="Image/item1.webp" alt=""></td>
-            <td><img src="Image/item1.webp" alt=""></td>
-        </tr>
-    </table>
-</div>
+
 </html>
