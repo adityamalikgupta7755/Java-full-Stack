@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flip Book</title>
+    <style>
+        #main{
+            position: relative;
+            top: 50px;
+            left: 400px;
+            border: 5px solid blue;
+            width: 300px;
+            height: 350px;
+            border-radius:  0px 20px 20px 0px ;
+            transform: skewY(-10deg);
+            box-shadow: 2px 10px 10px black;
+        }
+        #main img{
+            width: 260px;
+            height: 310px;
+            margin: 20px 20px;
+        }
+        #wrapper{
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            border: 5px solid blue;
+            background-color: white;
+            transform-origin: left;
+            width: 300px;
+            height: 350px;
+            border-radius:  0px 20px 20px 0px ;
+            transition: all 3s linear;
+            text-align: center;
+            
+        }
+        #main:hover #wrapper{
+            transform: perspective(1000px) rotateY(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img src="amg.jpg" alt="">
+        <div id="wrapper">
+            <h1>Open Me</h1>
+        </div>
+    </div>
+</body>
+</html>

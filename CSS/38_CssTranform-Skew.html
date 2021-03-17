@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS TRANSFORM 3D SKEW</title>
+    <style>
+        div{
+            background-color: blue;
+            color: white;
+            width: 70px;
+            padding: 30px;
+            border: 3px solid red;
+            margin-bottom: 100px;
+            transition: all 2s;
+        }
+        #S_1d-x:hover{
+            transform: skewX(80deg);
+        }
+        #S_1d-y:hover{
+            transform: skewY(60deg);
+        }
+
+        #S_2d:hover{
+            transform: skew(20deg, 30deg);
+        }
+    </style>
+</head> 
+<body>
+    <div id="S_1d-x">
+        Transform Scale X
+    </div>
+    <div id="S_1d-y">
+        Transform Scale Y
+    </div>
+ 
+    <div id="S_2d">
+        Transform Scale 2D
+    </div>
+</body>
+</html>

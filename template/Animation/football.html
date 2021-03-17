@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Court</title>
+    <style>
+        div {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border: 2px solid black;
+
+        }
+
+        div img {
+            width: inherit;
+            height: inherit;
+        }
+
+        #player {
+            position: absolute;
+            top: -3px;
+            width: 150px;
+            height: 200px;
+            left: 100px;
+            border: none;
+            transform: rotate(40deg, 60deg);
+            animation: player 2s linear 0s 1;
+        }
+        @keyframes player {
+            0%, 100%{
+                transform: translate(0px, 0px);
+            }
+
+            50% {
+                transform: translate(2px, 8px);
+            }
+        }
+        #player2 {
+            position: absolute;
+            top: -3px;
+            width: 150px;
+            height: 200px;
+            left: 495px;
+            border: none;
+            transform: rotateY( 221deg);
+            animation: player2 2s linear 4050ms 1;
+        }
+        @keyframes player2 {
+            0%, 100%{
+                left: 500px;
+            }
+
+            50% {
+                left: 490px;
+            }
+        }
+        #player3 {
+            position: absolute;
+            top: 250px;
+            width: 150px;
+            height: 200px;
+            left: 287px;
+            border: none;
+            transform: rotateY( 60deg);
+            animation: player3 2s linear 6050ms 1;
+        }
+        @keyframes player3 {
+            0%, 100%{
+                left: 287px;
+            }
+
+            50% {
+                left: 350px;
+            }
+        }
+        #player4 {
+            position: absolute;
+            top: 50px;
+            width: 150px;
+            height: 200px;
+            left: 800px;
+            border: none;
+            transform: rotateY( 60deg);
+            animation: player4 2s linear 9050ms 1;
+        }
+        @keyframes player4 {
+            0%, 100%{
+                left: 800px;
+            }
+
+            50% {
+                left: 810px;
+            }
+        }
+
+        #ball {
+            position: absolute;
+            top: 88px;
+            left: 188px;
+            width: 50px;
+            height: 50px;
+            border: none;
+            animation: ball 10s linear 2s 1;
+        }
+
+        @keyframes ball {
+            0% {
+                top: 88px;
+                left: 188px;
+            }
+
+            25% {
+                top: 108px;
+                left: 500px;
+            }
+            50%{
+                top: 405px;
+                left: 380px;
+            }
+            75%{
+                top: 205px;
+                left: 880px;
+            }
+            100%{
+                top: 285px;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="ground.jpg" alt="">
+        <div id="player"><img src="boy.png" alt=""></div>
+        <div id="ball"><img src="ball.png" alt=""></div>
+        <div id="player2"><img src="boy.png" alt=""></div>
+        <div id="player3"><img src="boy.png" alt=""></div>
+        <div id="player4"><img src="boy.png" alt=""></div>
+    </div>
+</body>
+
+</html>

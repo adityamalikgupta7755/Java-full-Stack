@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS TRANSFORM 3D SCALE</title>
+    <style>
+        div{
+            background-color: blue;
+            color: white;
+            width: 70px;
+            padding: 30px;
+            border: 3px solid red;
+            margin-bottom: 100px;
+            transition: all 2s;
+        }
+        #S_1d-x:hover{
+            transform: scaleX(1.3);
+        }
+        #S_1d-y:hover{
+            transform: scaleY(1.3);
+        }
+        #S_1d-z:hover{
+            transform: scaleZ(-1.3);
+        }
+        #S_2d:hover{
+            transform: scale(1.2, 1.2);
+        }
+        #S_3d:hover{
+            transform: scale3d(1.3, 1.3, 1.3);
+        }
+    </style>
+</head> 
+<body>
+    <div id="S_1d-x">
+        Transform Scale X
+    </div>
+    <div id="S_1d-y">
+        Transform Scale Y
+    </div>
+    <div id="S_1d-z">
+        Transform Scale Z
+    </div>
+    <div id="S_2d">
+        Transform Scale 2D
+    </div>
+    <div id="S_3d">
+        Transform Scale 3D
+    </div>
+</body>
+</html>

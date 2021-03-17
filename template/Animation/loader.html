@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div {
+            position: relative;
+            width: 500px;
+            top: 200px;
+            left: 400px
+        }
+
+        div span {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin: 20px;
+            border-radius: 50%;
+            
+            animation: bounc 6s linear infinite;
+        }
+
+        @keyframes bounc {
+            0%,100% {
+                transform: scale(1, 1) translateX(0px);
+                box-shadow: 0 0px 10px white;
+            }
+            40% {
+                transform:translateX(20px);
+            }
+            50% {
+                transform:translateX(-20px);
+            }
+            60% {
+                transform: scale(1.2, 1.2) translateX(0px);
+                background-color: yellow;
+                box-shadow: 0 0px 10px white;
+            }
+        }
+        div span:first-child{
+    
+            animation-delay: 0s;
+        }
+        div span:nth-child(2){
+           
+            animation-delay: 1s;
+        }
+        div span:nth-child(3){
+            
+            animation-delay: 2s;
+        }
+        div span:nth-child(4){
+            
+            animation-delay: 3s;
+        }
+        div span:nth-child(5){
+          
+            animation-delay: 4s;
+        }
+        div span:last-child{
+        
+            animation-delay: 5s;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+
+</html>

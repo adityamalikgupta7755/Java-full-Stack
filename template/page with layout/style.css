@@ -1,0 +1,89 @@
+ body{
+margin: 0;
+background-color: cyan;
+}
+header,footer{
+    padding: 10px 0px;
+    background:linear-gradient(45deg, orange, limegreen,blue) ;
+}
+header h1{
+    margin: 0;
+    text-align: right;
+    color: white;
+    padding-right: 15px;
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+    
+
+}
+nav{
+    background:linear-gradient(45deg, rgb(120, 120, 238) , rgb(97, 253, 97),rgb(243, 171, 37)) ;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding:10px 40px;
+    font-size: 25px;
+}
+nav a span{
+    margin-right: 5px;
+}
+#main{
+    border: 1px solid transparent;
+}
+aside{
+    position: sticky;
+    top: 0px;
+    width: 300px;
+    float: left;
+    background:linear-gradient(45deg, rgb(120, 120, 238) , rgb(97, 253, 97),rgb(243, 171, 37)) ;
+
+}
+aside a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 40px 0px;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+aside a:hover {
+    color: blue;
+    text-shadow: 0 0 10px black;
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px white;
+    border-radius: 20px;
+}
+section{
+    margin-left: 310px;
+    
+}
+section article{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    box-shadow: 0 0 10px black;
+    background:linear-gradient(45deg, rgb(120, 120, 238) , rgb(97, 253, 97),rgb(243, 171, 37)) ;
+
+}
+section article h1{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+section article p{
+    font-size: 25px;
+    text-indent: 90px;
+    word-spacing: 5px;
+    padding: 0px 20px;
+}
+p {
+    text-align: justify;
+}
+footer p{
+    text-align: center;
+    line-height: 5px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 10px black;
+}

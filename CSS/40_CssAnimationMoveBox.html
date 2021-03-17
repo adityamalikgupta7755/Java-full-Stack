@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+      div{
+          background-color: blue;
+          color: white;
+          width: 90px;
+          padding: 30px;
+          border: 5px solid red;
+          position: relative;
+          top: 100px;
+          left: 200px;
+          /* Animation properties */
+          animation: move 2s linear 0s infinite alternate-reverse;
+      }
+      @keyframes move
+      {
+         0%{
+             top:0px;
+             left:0px;
+             border-radius:0px; 
+         } 
+         25%{
+             top:0px;
+             left:150px;
+             border-radius:60px 0px 0px 0px;
+
+         }
+         50%{
+             top:150px;
+             left:150px;
+             border-radius:0px 60px 0px 0px;
+
+         } 
+         75%{
+             top:150px;
+             left:0px;
+             border-radius:0px 0px 60px 0px;
+
+         }
+         100%{
+             top:0px;
+             left:0px;
+             border-radius:60px;
+
+             
+         } 
+      }
+  </style>
+</head>
+<body>
+    <div>
+        <p>Animation</p>
+    </div>
+</body>
+</html>

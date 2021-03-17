@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+      div{
+          background-color: blue;
+          color: white;
+          width: 90px;
+          padding: 30px;
+          border: 5px solid red;
+          position: relative;
+          top: 100px;
+          left: 200px;
+          /* Animation properties */
+          animation-name: anim;
+          animation-duration: 2s;
+          animation-timing-function: linear;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-direction: normal;
+      }
+      @keyframes anim 
+      {
+         0%{
+             transform: perspective(200px) rotateZ(0deg);
+             background-color: blue;
+         } 
+         50%{
+             background-color: pink;
+         } 
+         100%{
+             transform: perspective(200px) rotateZ(360deg);
+             background-color: yellow;
+         } 
+      }
+  </style>
+</head>
+<body>
+    <div>
+        <p>Animation</p>
+    </div>
+</body>
+</html>

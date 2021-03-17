@@ -1,0 +1,196 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: radial-gradient(circle, #a385f8, #947cf9, #8373fa, #6e6bfc, #5463fd, #495af6, #3d51ef, #2f48e8, #3b3bd7, #422ec7, #461fb6, #480ca6);
+}
+#header {
+    border: 1px solid rgb(166, 142, 247);
+    position: relative;
+    top: 5px;
+    /* border: 2px solid #480CA6; */
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 40px 40px 0 0;
+    background-image: radial-gradient(circle, #a385f8, #947cf9, #8373fa, #6e6bfc, #5463fd, #495af6, #3d51ef, #2f48e8, #3b3bd7, #422ec7, #461fb6, #480ca6);
+    box-shadow: 0 0 10px #480CA6;
+}
+
+#address {
+    /* background-color: blue; */
+    top: 0;
+    width: 33.33%;
+    height: inherit;
+}
+#address span{
+    display: block;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 20px;
+}
+#address span a{
+    color: #fff;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+
+
+#heading {
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 33.33%;
+    width: 33.33%;
+    height: inherit;
+
+}
+
+#heading h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px black;
+}
+
+#pic {
+    /* background-color: orange; */
+    position: absolute;
+    top: 0;
+    left: 66.66%;
+    width: 33.33%;
+    height: inherit;
+}
+
+#pic img {
+    height: 90px;
+    width: 100px;
+    margin-left: 330px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+#main-box {
+    position: relative;
+    top: 20px;
+    /* border: 2px solid blue; */
+    height: 3000px;
+}
+
+#nav-bar {
+    /* background-color: limegreen; */
+    top: 0px;
+    width: 23%;
+    height: inherit;
+    
+}
+
+#nav-bar ul {
+    position: sticky;
+    top: 30px;
+    margin-top: -40px;
+    left: -40px;
+}
+
+#nav-bar ul li {
+    border: 1px solid #fff;
+    list-style: none;
+    margin: 40px 0px;
+    padding: 5px 8px 5px 80px;
+    transform: translateX(-100px);
+    transition: all 1s linear;
+    text-align: right;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #480CA6;
+}
+
+#nav-bar ul li:hover {
+    transform: translateX(5px);
+    text-align: center;
+    padding: 5px 55px;
+    box-shadow: 0 0 10px #480CA6;
+    background-image: radial-gradient(circle, #a385f8, #947cf9, #8373fa, #6e6bfc, #5463fd, #495af6, #3d51ef, #2f48e8, #3b3bd7, #422ec7, #461fb6, #480ca6);
+
+}
+
+#nav-bar ul li a {
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    /* margin: 20px 0px; */
+}
+
+#nav-bar ul li a:hover {
+    color: white;
+}
+
+#Content-Section {
+    position: absolute;
+    width: 77%;
+    height: inherit;
+    left: 23%;
+    top: -30px;
+    /* background-color: yellow; */
+}
+
+#my-self h1 {
+    text-align: center;
+}
+
+.card {
+    margin: 40px;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 10px #480CA6;
+    background-image: radial-gradient(circle, #a385f8, #947cf9, #8373fa, #6e6bfc, #5463fd, #495af6, #3d51ef, #2f48e8, #3b3bd7, #422ec7, #461fb6, #480ca6);
+}
+#my-self{
+    text-align: justify;
+    font-family: cursive;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+#Edu table tr td{
+    padding: 26px 32px;
+}
+.list{
+    padding: 10px 290px;
+    text-align: left;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+#Personal dl dt,#Personal dl dd{
+    text-align: left;
+    padding: 10px 30px;
+}
+#Personal dl dt{
+    font-weight: bold;
+}
+#footer {
+    /* position: fixed;
+    bottom: 0px; */
+    margin-top: 50px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    height: 100px;
+    border-radius: 0 0 40px 40px;
+    background-image: radial-gradient(circle, #a385f8, #947cf9, #8373fa, #6e6bfc, #5463fd, #495af6, #3d51ef, #2f48e8, #3b3bd7, #422ec7, #461fb6, #480ca6);
+    box-shadow: 0 0 10px #480CA6;
+    border: 1px solid rgb(166, 142, 247);
+}
+
+#footer p {
+    line-height: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 0 0 20px black;
+    
+}

@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    /* border: 2px solid black; */
+    height: 90px;
+    border-radius: 45px 45px 0px 0px;
+    background-image: radial-gradient(circle, #4827a6, #4736b6, #4444c6, #3f52d6, #3860e6, #365de0, #355ada, #3357d4, #3443b7, #31309b, #2c1c80, #240766);
+    box-shadow: 0 0 10px blueviolet;
+    
+}
+header h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding-top: 13px;
+}
+nav{
+    /* border: 2px solid black; */
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+    border-radius: 0px 0px 46px 46px;
+    box-shadow: 0 0 10px blueviolet;
+    background-image: linear-gradient(to right top, #4827a6, #412199, #3b1b8d, #341581, #2d0f75, #2d0f75, #2d0f75, #2d0f75, #341581, #3b1b8d, #412199, #4827a6);
+}
+nav a{
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0px 40px;
+    /* color: black; */
+    color: white;
+}
+#card-section{
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    height: 430px;
+}
+#card-section .card{
+    border: 2px solid blue;
+    width: 300px;
+    height: inherit;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px blueviolet;
+    margin: 0px 70px; /* why when we use auto it not going to work*/
+}
+.card h1{
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 30px;
+    border-radius: 17px 17px 0px 0px;
+    padding: 10px 0px;
+    color: white;
+    background-image: radial-gradient(circle, #4827a6, #4736b6, #4444c6, #3f52d6, #3860e6, #365de0, #355ada, #3357d4, #3443b7, #31309b, #2c1c80, #240766);
+    
+}
+.card .image{
+    height: 370px;
+    width: inherit;
+    transition: all 3s linear;
+    /* border: 1px solid black; */
+}
+.card:hover .image{
+    height: 250px;
+    width: 225px; 
+    margin: 10px 38px;
+}
+.card .card-content{
+    /* border: 1px solid black; */
+    border-top: 2px solid blue;
+    height: 100px;
+    transform: translateY(100px);
+    border-radius: 0px 0px 10px 10px;
+}
+.card:hover .card-content{
+    transform: translateY(0px); 
+}
+.card-content p{
+    margin-bottom: 15px;
+    text-align: justify;
+    padding: 5px;
+}
+.btn{
+    /* border: 1px solid black; */
+    padding: 6px 36px;
+    margin: 0px 87px;
+    background-color: rgb(4, 184, 4);
+    box-shadow: 2px 0 10px rgb(4, 184, 4);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#News-section{
+    /* border: 2px solid black; */
+    /* height: 1000px; */
+    margin-top: 10px;
+}
+.News-card
+{
+    border: 2px solid blue;
+    height: 600px;
+    margin: 50px 20px;
+    border-radius: 40px 8px 40px 8px;
+    box-shadow: 0 0 10px blueviolet;
+}
+.News-card h1{
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0px;
+    border-radius: 38px 5px 0px 0px;
+    background-image: linear-gradient(to right top, #4827a6, #412199, #3b1b8d, #341581, #2d0f75, #2d0f75, #2d0f75, #2d0f75, #341581, #3b1b8d, #412199, #4827a6);
+    color: white;
+}
+.News-card .img-section{
+    border: 1px solid black;
+    margin: 15px 150px;
+    height: 350px;
+    border-radius: 20px;
+    
+}
+.img-section{
+    overflow: hidden;
+}
+.img-section .pic{
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    
+    transition: all 3s linear;
+    
+}
+.News-card:hover .pic{
+    transform: perspective(400px) scale(1.2, 1.2);
+}
+.News-card .content{
+    border: 1px solid blue;
+    height: 150px;
+    border-radius: 0px 0px 38px 5px;
+}
+.News-card .content p{
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+footer{
+    /* border: 2px solid black; */
+    /* height: 90px; */
+    border-radius:  0px 0px 45px 45px;
+    background-image: radial-gradient(circle, #4827a6, #4736b6, #4444c6, #3f52d6, #3860e6, #365de0, #355ada, #3357d4, #3443b7, #31309b, #2c1c80, #240766);
+    box-shadow: 0 0 10px blueviolet;
+    text-align: center; 
+    padding: 30px 0px;
+    line-height: 20px;
+    color: white;
+}
+/* About us */
+#AboutUs-Section{
+    position: relative;
+    /* border: 2px solid black; */
+    /* height: 500px; */
+    margin: 20px 0px;
+    
+}
+#AboutUs-Section .Aboutus{
+    /* border: 2px solid blue;  */
+    height: 400px;  
+    margin: 40px 20px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px blueviolet;
+}
+.Aboutus .img-section{
+    display: inline-block;
+    /* border: 2px solid black; */
+    height: inherit;
+    width: 28%;
+    border-radius: 36px 0px 0px 36px;
+}
+.img-section img{
+    height: inherit;
+    width: 100%;
+}
+.Aboutus  .right{
+    position: absolute;
+    left: 951px;
+    border-radius: 0px 36px 36px 0px;  
+}
+.Aboutus .content{
+    position: absolute;
+    display: inline-block;
+    /* border: 2px solid red; */
+    height: inherit;
+    width: 67%;
+    left: 420px;
+    /* top: 0px; */
+    border-radius: 0px 36px 36px 0px;
+    /* float: right; */
+}
+.Aboutus .left{
+   left: 20px;
+    border-radius: 36px 0px 0px 36px; 
+}
+.content h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size:40px ;
+}
+.content p{
+    text-align: justify;
+    margin-top: 20px;
+    font-size:20px ;
+    padding: 0px 20px;
+}
+/* gallery section */
+#gallery-Section{
+    /* border: 2px solid black; */
+    margin: 50px 0px;
+}
+#gallery-Section .gallery-rows{
+    /* border: 2px solid blue; */
+    height: 400px;
+    margin: 40px 0px;
+}
+.gallery-rows .cards{
+    /* border: 2px solid black; */
+    width: 300px;
+    height: inherit;
+    margin: 0px 14px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px blueviolet;
+}
+.gallery-rows .cards img{
+    /* border: 2px solid blue; */
+    width: 250px;
+    height: 300px;
+    margin: 23px 23px 0px 23px;
+    border-radius: 30px 30px 10px 10px;
+}
+.gallery-rows figcaption{
+    font-size: 20px;
+    margin: 23px 117px;
+}
+/* contact us */
+#contact{
+    /* border: 2px solid black; */
+    margin: 50px auto;
+    width: 600px;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 30px;
+}
+#contact h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+#contact label{
+    font-size: 20px;
+    margin: 0px 30px;
+}
+#contact input, textarea{
+    outline: none;
+    border: 1px solid blue;
+    height: 30px;
+    width: 300px;
+    margin: 10px 0px;
+    border-radius: 7px;
+}
+#contact textarea{
+    height: 90px;
+}
+#contact .btn{
+    width: 250px;
+    margin-left: 180px;
+    padding: 0px 0px;
+}
