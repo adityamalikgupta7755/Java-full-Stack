@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Card </title>
+    <script src="https://kit.fontawesome.com/e13b83aede.js" crossorigin="anonymous"></script>
     <style>
         #card{
             position: absolute;
@@ -32,17 +33,27 @@
             height: inherit;
         }
         #front{
-            transform: perspective(600px) rotateX(0deg);
+            transform: perspective(1000px) rotateY(0deg);
         }
         #back {
-            text-align: center;
-            transform: perspective(600px) rotateX(-180deg);
+            transform: perspective(1000px) rotateY(180deg);
         }
         #card:hover  #front{
-            transform: perspective(600px) rotateX(180deg);
+            transform: perspective(1000px) rotateY(-180deg);
         }
         #card:hover  #back{
-            transform: perspective(600px) rotateX(0deg);
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        #back #content{
+            text-align: center;
+            margin-top: 150px;
+        }
+        #content span{
+            font-size: 35px;
+        }
+        #content span:hover {
+            color: blue;
+            text-shadow: 0 0 5px lightblue;
         }
     </style>
 </head>
@@ -54,7 +65,9 @@
         <div id="back">
             <div id="content">
                 <h1>Aditya Malik Gupta</h1>
-                <span></span>
+                <span class="fab fa-facebook"></span>
+                <span class="fab fa-linkedin"></span>
+                <span class="fab fa-instagram"></span>
             </div>
         </div>
     </div>

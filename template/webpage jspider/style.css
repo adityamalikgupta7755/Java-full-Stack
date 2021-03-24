@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+/* header section */
 header{
     /* border: 2px solid black; */
     height: 90px;
@@ -16,6 +17,7 @@ header h1{
     font-size: 40px;
     padding-top: 13px;
 }
+/* navigation bar */
 nav{
     /* border: 2px solid black; */
     position: sticky;
@@ -32,6 +34,7 @@ nav a{
     /* color: black; */
     color: white;
 }
+/* courses section */
 #card-section{
     /* border: 2px solid black; */
     margin-top: 50px;
@@ -60,7 +63,7 @@ nav a{
 .card .image{
     height: 370px;
     width: inherit;
-    transition: all 3s linear;
+    transition: all 2s linear;
     /* border: 1px solid black; */
 }
 .card:hover .image{
@@ -93,7 +96,12 @@ nav a{
     font-size: 20px;
     font-weight: bold;
     border-radius: 20px;
+    text-decoration: none;
 }
+.btn a{
+    /* text-decoration: none; */
+}
+/* news section */
 #News-section{
     /* border: 2px solid black; */
     /* height: 1000px; */
