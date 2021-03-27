@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Landing Page</title>
+   <link rel="stylesheet" href="MdBS/css/bootstrap.css">
+   <link rel="stylesheet" href="MdBS/css/mdb.css">
+   <style>
+       *{
+           margin: 0px;
+           padding: 0px;
+       }
+       #nav-bar{
+           background-color: black;
+           height: 50px;
+           display: flex;
+           flex-direction: row;
+           /* flex-wrap: wrap; */
+           align-items: center;
+           justify-content: space-between;
+           
+       }
+       #nav-bar h2 span{
+           color: orange;
+           margin-right: 5px;
+       }
+       #nav-bar h2{
+           color: white;
+           margin-left: 10px;
+       }
+       #nav-bar nav{
+           /* margin-right: 20px; */
+           display: flex;
+           flex-direction: row;
+       }
+       #nav-bar nav a{
+           text-decoration: none;
+           color: white;
+           text-transform: capitalize;
+           font-size: 20px;
+           margin-right: 30px;
+       }
+       /* Banner section */
+       #Main-content{
+           background: white url('img/group-bg.jpg') no-repeat scroll center;
+           height: 100vh;
+           background-size: cover;
+       }
+       #Main-content #Main-content-wrapper{
+           /* border: 2px solid blue; */
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           color: white;
+           height: inherit;
+           background-color: rgba(0,0,0,0.4);
+       }
+       #Main-content-wrapper h2{
+           font-size: 40px;
+       }
+       #Main-content-wrapper p{
+           font-size: 20px;
+           text-align: center;
+           padding: 10px;
+       }
+       #Main-content-wrapper button{
+           padding: 10px 20px;
+           background-color: rgba(0, 0, 0, 0.432);
+           color: orange;
+           font-size: 20px;
+           outline: none;
+           border: 2px solid white;
+           border-radius: 20px;
+       }
+       #Main-content-wrapper button:hover{
+        background-color: orange;
+        color: white; 
+        box-shadow: 0 3 10px white;
+       }
+       @media  (max-width: 600px) {
+        #nav-bar{
+            height: 80px;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            justify-content: center;
+           
+           }
+           #nav-bar nav{
+           /* flex-direction: column; */
+           margin: 10px 20px;
+       }
+}
+   </style>
+</head>
+<body>
+    <div id="nav-bar">
+        <h2><span>Jspider</span>Institute</h2>
+        <nav>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <button class="btn btn-outline-success btn-sm " data-toggle="modal" data-target="#login">Login</button>
+            <button class="btn btn-outline-success btn-sm " data-toggle="modal" data-target="#signup">Signup</button>
+        </nav>
+    </div>
+    <div id="Main-content">
+        <div id="Main-content-wrapper">
+            <h2>Welcome to <span style="color: orange;">UI technologies</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eum sapiente nemo porro ullam qui pariatur reprehenderit architecto voluptates odio saepe, magni labore fugiat atque delectus nostrum aut autem distinctio!</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content animated swing">
+                <div class="modal-header bg-primary text-center text-white">
+                    <h3>Login Here</h3>
+                    <button class="close" data-dismiss="modal">x</button>
+                </div>
+                    <div class="modal-body bg-light">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" placeholder="Enter User name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Enter Password" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer bg-primary text-white">
+                        <button type="submit" class="btn btn-outline-white btn-md"> Login</button>
+                        <button class="close btn btn-outline-white btn-md " data-dismiss="modal">Close</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal signup -->
+        <div class="modal" id="signup">
+            <div class="modal-dialog">
+                <div class="modal-content animated swing">
+                    <div class="modal-header bg-primary text-center text-white">
+                        <h3>Sign Up</h3>
+                        <button class="close" data-dismiss="modal">x</button>
+                    </div>
+                        <div class="modal-body bg-light">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Enter User name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Enter Full Name" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Enter Email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" placeholder="Enter Password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" placeholder="Enter Confirm-Password" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer bg-primary text-white">
+                            <button type="submit" class="btn btn-outline-white btn-md"> Sign Up</button>
+                            <button class="close btn btn-outline-white btn-md " data-dismiss="modal">Close</button>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    <!-- Script Code -->
+    <script src="MdBS/js/jquery.js"></script>
+    <script src="MdBS/js/popper.js"></script>
+    <script src="MdBS/js/bootstrap.js"></script>
+    <script src="MdBS/js/mdb.js"></script>
+</body>
+</html>
