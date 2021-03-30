@@ -6,18 +6,17 @@ class FibonacciWithRangeInReverse
     {
         Scanner scn= new Scanner(System.in);
         System.out.println("Enter a n value of fibonacci serise");
-        int n =scn.nextInt();
+        int last =scn.nextInt();
         System.out.println("Enter a n-1 value of fibonacci serise");
-        int m =scn.nextInt();
-        int  c, i=1;
-        while(n>=0)
+        int secondlast =scn.nextInt();
+        int c;
+        while(secondlast>=0)
         {
-            System.out.print(n+",");
-            if(m==0) break;
-            c=n-m;
-            n=m;
-            m=c;
-            i++;
+            System.out.print(last+",");
+            if(last==0) break;
+            c=last-secondlast;
+            last=secondlast;
+            secondlast=c;
         }
     }
 }
