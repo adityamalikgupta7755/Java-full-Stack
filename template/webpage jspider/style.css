@@ -4,7 +4,6 @@
 }
 /* header section */
 header{
-    /* border: 2px solid black; */
     height: 90px;
     display: flex;
     flex-direction: row;
@@ -23,7 +22,6 @@ header h1{
 }
 /* navigation bar */
 nav{
-    /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,33 +36,27 @@ nav{
 nav a{
     text-decoration: none;
     font-size: 22px;
-    margin: 0px 40px; 
-    /* color: black; */
+    margin: 0px auto; 
     color: white;
 }
 /* courses section */
 #card-section{
-    /* border: 2px solid black; */
     display: flex;
-    /* align-items: flex-start; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    /* height: 430px; */
 }
 #card-section .card{
     border: 2px solid blue;
     width: 300px;
     height: 430px;
-    /* display: inline-block; */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px blueviolet;
-    margin: 20px 70px; /* why when we use auto it not going to work*/
+    margin: 20px 70px;
 }
 .card h1{
-    /* border: 1px solid black; */
     text-align: center;
     font-size: 30px;
     border-radius: 17px 17px 0px 0px;
@@ -77,7 +69,6 @@ nav a{
     height: 370px;
     width: inherit;
     transition: all 2s linear;
-    /* border: 1px solid black; */
 }
 .card:hover .image{
     height: 250px;
@@ -85,7 +76,6 @@ nav a{
     margin: 10px 38px;
 }
 .card .card-content{
-    /* border: 1px solid black; */
     border-top: 2px solid blue;
     height: 100px;
     transform: translateY(100px);
@@ -100,7 +90,6 @@ nav a{
     padding: 5px;
 }
 .btn{
-    /* border: 1px solid black; */
     padding: 6px 36px;
     margin: 0px 87px;
     background-color: rgb(4, 184, 4);
@@ -111,13 +100,9 @@ nav a{
     border-radius: 20px;
     text-decoration: none;
 }
-.btn a{
-    /* text-decoration: none; */
-}
+
 /* news section */
 #News-section{
-    /* border: 2px solid black; */
-    /* height: 1000px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -127,13 +112,11 @@ nav a{
 .News-card
 {
     border: 2px solid blue;
-    /* height: 600px; */
     margin: 50px 20px;
     border-radius: 40px 8px 40px 8px;
     box-shadow: 0 0 10px blueviolet;
 }
 .News-card h1{
-    /* border: 1px solid black; */
     text-align: center;
     font-size: 40px;
     padding: 10px 0px;
@@ -174,14 +157,12 @@ nav a{
     padding: 10px 30px;
 }
 footer{
-    /* border: 2px solid black; */
-    /* height: 90px; */
     border-radius:  0px 0px 45px 45px;
     background-image: radial-gradient(circle, #4827a6, #4736b6, #4444c6, #3f52d6, #3860e6, #365de0, #355ada, #3357d4, #3443b7, #31309b, #2c1c80, #240766);
     box-shadow: 0 0 10px blueviolet;
     text-align: center; 
-    padding: 30px 0px;
-    line-height: 20px;
+    padding: 10px 0px;
+    line-height: 30px;
     color: white;
 }
 /* About us */
@@ -190,8 +171,6 @@ footer{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    border: 2px solid black;
-    /* height: 500px; */
     margin: 20px 0px;
     
 }
@@ -203,38 +182,35 @@ footer{
     margin: 40px 20px;
     border-radius: 40px;
     box-shadow: 0 0 10px blueviolet;
-    /* overflow: hidden; */
 }
  .Aboutus .img-section{
-    border: 2px solid black; 
-    height: inherit;
+    height: 99%;
     width: 28%;
     border-radius: 36px 0px 0px 36px;
  }  
  .img-section img{
-    height: inherit;
+    height: 100%;
     width: 100%;
 } 
-/* .Aboutus  .right{
+ .Aboutus  .right{
     position: absolute;
-    left: 951px;
+    left: 71%;
     border-radius: 0px 36px 36px 0px;  
-} */
+} 
 .Aboutus .content{
     position: absolute;
     top: 0px;
-    border: 2px solid red; 
-    height: inherit;
+    height: 95%;
     width: 72%;
-    padding: 5px;
     left: 28%;
+    padding: 5px;
     overflow: hidden;
     border-radius: 0px 36px 36px 0px;
 } 
-/* .Aboutus .left{
-   left: 20px;
+ .Aboutus .left{
+   left: 0;
     border-radius: 36px 0px 0px 36px; 
-} */
+} 
  .content h1{
     text-align: center;
     margin-top: 20px;
@@ -248,38 +224,33 @@ footer{
 } 
 /* gallery section */
 #gallery-Section{
-    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 50px 0px;
 }
-#gallery-Section .gallery-rows{
-    /* border: 2px solid blue; */
-    height: 400px;
-    margin: 40px 0px;
-}
-.gallery-rows .cards{
-    /* border: 2px solid black; */
+#gallery-Section .cards{
     width: 300px;
-    height: inherit;
-    margin: 0px 14px;
-    display: inline-block;
+    height: 400px;
+    margin: 20px 14px;
     background-color: white;
     border-radius: 30px;
     box-shadow: 0 0 10px blueviolet;
 }
-.gallery-rows .cards img{
-    /* border: 2px solid blue; */
+#gallery-Section .cards img{
     width: 250px;
     height: 300px;
     margin: 23px 23px 0px 23px;
     border-radius: 30px 30px 10px 10px;
 }
-.gallery-rows figcaption{
+#gallery-Section figcaption{
     font-size: 20px;
-    margin: 23px 117px;
+    margin: 23px 112px;
 }
 /* contact us */
 #contact{
-    /* border: 2px solid black; */
     margin: 50px auto;
     width: 600px;
     box-shadow: 0 0 10px blueviolet;
@@ -288,7 +259,7 @@ footer{
 #contact h1{
     text-align: center;
     font-size: 40px;
-    margin: 20px 0px;
+    padding-top: 20px;
 }
 #contact label{
     font-size: 20px;
@@ -309,4 +280,36 @@ footer{
     width: 250px;
     margin-left: 180px;
     padding: 0px 0px;
+    margin-bottom: 20px;
+}
+@media (max-width:700px){
+    .Aboutus .img-section{
+        width: 40%;
+    }
+    .Aboutus  .right{
+        left: 60%;
+    }
+    .Aboutus .content{
+        width: 60%;
+        left: 40%;
+    }
+    .Aboutus .left{
+        left: 0%;}
+    nav a{
+        margin: 0px 25px;
+    }
+    #contact{   
+        width: 400px;
+    }
+    #contact label{
+        margin: 0px 10px;
+    }
+    #contact input, textarea{  
+        width: 200px;
+    }
+    #contact .btn{
+        width: 200px;
+        margin-left: 100px;
+        
+    }
 }
