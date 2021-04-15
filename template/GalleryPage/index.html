@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        #main-section {
+            /* border: 2px solid blue; */
+            height: 95vh;
+        }
+
+        #main-section .gallery {
+            position: absolute;
+            border: 1px solid black;
+            height: 300px;
+            width: 600px;
+            padding: 10px;
+            left: 30%;
+            background-color: white;
+            /* translate: (50, 50); */
+            margin: 150px auto;
+            border-radius: 20px;
+            transition: all 1s linear;
+        }
+
+        #main-section .gallery img {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+        }
+
+        #main-section #angle,
+        #main-section #angle-1,
+        #main-section #angle-2 #main-section #angle-3,
+        #main-section #angle-4 {
+            transform: translateZ(0deg);
+
+        }
+
+        #main-section:hover #angle {
+            transform: rotateZ(28deg);
+        }
+
+        #main-section:hover #angle-1 {
+            transform: rotateZ(21deg);
+        }
+
+        #main-section:hover #angle-2 {
+            transform: rotateZ(14deg);
+        }
+
+        #main-section:hover #angle-3 {
+            transform: rotateZ(7deg);
+        }
+
+        #main-section:hover #angle-4 {
+            transform: rotateZ(0deg);
+        }
+
+        #main-section #angle:hover {
+            z-index: 5;
+            transform: rotateZ(0deg);
+        }
+
+        #main-section #angle-1:hover {
+            z-index: 4;
+            transform: rotateZ(0deg);
+        }
+
+        #main-section #angle-2:hover {
+            z-index: 3;
+            transform: rotateZ(0deg);
+        }
+
+        #main-section #angle-3:hover {
+            z-index: 2;
+            transform: rotateZ(0deg);
+        }
+
+        #main-section #angle-4:hover {
+            z-index: 1;
+            transform: rotateZ(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-section">
+        <div class="gallery" id="angle">
+            <img src="img/nature.jfif" alt="">
+        </div>
+        <div class="gallery" id="angle-1">
+            <img src="img/nature7.jpg" alt="">
+        </div>
+        <div class="gallery" id="angle-2">
+            <img src="img/nature10.jpg" alt="">
+        </div>
+        <div class="gallery" id="angle-3">
+            <img src="img/nature11.jpg" alt="">
+        </div>
+        <div class="gallery" id="angle-4">
+            <img src="img/nature13.jfif" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
