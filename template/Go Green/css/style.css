@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #nav-bar {
     border-radius: 40px 40px 0px 0px;
     border: 2px solid greenyellow;
@@ -39,17 +43,15 @@
     width: 100%;
     height: 500px;
     overflow: hidden;
-    border-radius: 20px;
 }
 
 #header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: inherit;
     width: inherit;
     height: inherit;
-    background: blueviolet url('./Image/bg2.jpg') no-repeat fixed center;
+    background: blueviolet url('../Image/bg1.jpg') no-repeat fixed center;
     background-size: cover;
     box-shadow: 0 0 8px greenyellow;
     transition: all 4s;
@@ -60,10 +62,9 @@
 }
 
 #header h1 {
-    /* top: 50%;
-    left: 40%; */
     padding: 5px 10px;
     border-radius: 25%;
+    font-size: 40px;
     background-color: rgba(153, 205, 50, 0.596);
     box-shadow: 0 0 10px black;
     transform: perspective(200px) rotateX(90deg);
@@ -76,6 +77,9 @@
 }
 
 /* Product Section */
+#Products h1{
+    margin: 20px 20px;
+}
 .Product-Section  {
     display: flex;
     flex-direction: row;
@@ -88,67 +92,82 @@
 
 .Product-Section .card {
     width: 280px;
-    height: 400px;
+    height: 300px;
     height: inherit;
     margin: 20px auto;
+    background-color: white;
     border: 2px solid greenyellow;
     border-radius: 20px;
     box-shadow: 0 0 10px greenyellow;
+    transition: all 1s;
+    overflow: hidden;
 }
 .card:hover{
     box-shadow: 0 0 20px rgb(107, 175, 4);
+    transform: skew(5deg, 2deg);
 }
 .card .product-img {
     width: 100%;
-    height: 65%;
+    height: 60%;
+    overflow: hidden;
 }
 
 .card .product-img img {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0px;
 }
+.card:hover img{
+    transform: scale(1.1, 1.1);
+}
 
 .card .Product-disc {
     width: 100%;
-    height: 35%;
+    height: 40%;
     text-align: center;
-    line-height: 8px;
+    line-height: 20px;
     letter-spacing: 3px;
 }
 
 .Product-disc h1 {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: left;
     padding-left: 5px;
+}
+.Product-disc p{
+    margin: 15px 0px;
 }
 
 .Product-disc h2 {
     text-align: right;
     padding-right: 10px;
-    /* padding-bottom: 25px; */
+    margin-top: 20px;
 }
 
 .Product-disc span {
     background-color: #6c9905;
-    padding: 0px 10px;
+    padding: 5px 10px;
     line-height: 38px;
+    margin: 15px 0px;
     border: 2px solid rgb(255, 251, 0);
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(255, 251, 0);
     color: white;
     font-weight: bold;
     font-family: cursive;
+    transition: all 1s;
 }
-
+.card:hover span{
+    background-color: #990505;
+}
 /* Quits or Thoughts*/
 #Quits {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    background: blueviolet url('./Image/bg3.png') no-repeat fixed center;
+    background: blueviolet url('../Image/bg3.png') no-repeat fixed center;
     background-size: cover;
 }
 
@@ -192,8 +211,11 @@
     position: relative;
     margin: 20px 20px;
 }
+#form-section table tr td{
+    padding: 10px 0px;
+}
 
-#form-section table tr td {
+#form-section table tr td label{
     padding: 8px 45px;
     font-size: 22px;
     font-weight: bold;
@@ -237,47 +259,57 @@ textarea {
 /* footer */
 #footer {
     margin-top: 50px;
-    width: 100%;
-    height: 100px;
+    width: 97vw;
+    height: 50px;
     border: 2px solid greenyellow;
     background: radial-gradient(circle, #567a05, #6c9905, #82ba04, #99dc02, #b1ff00);
     box-shadow: 0 0 8px greenyellow;
     border-radius: 0 0 40px 40px;
     text-align: center;
     color: white;
-    line-height: 10px;
+    padding: 10px;
+    line-height: 20px;
     text-transform: capitalize;
-
 }
-@media (max-width: 1000px){
+#footer a{
+    color: white;
+    text-decoration: none; 
+}
+@media (max-width: 800px){
     #nav-bar{
         flex-direction: column;
-        height: 70px;
-        justify-content: center;
+        height: 200px;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
     #nav-bar #logo{
-        margin-bottom: 5px;
+        margin: 10px auto;
+    }
+    #nav-bar #nav-link a{
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+        justify-content: flex-start;
+    margin: 10px 10px;
     }
     #header-banner{
         height: 300px;
     }
+    #header h1 {
+        font-size: 20px;
+    }
     #Quits p{
         padding: 15px;
         color: white;
-        font-size: 18px;
+        font-size: 15px;
     }
-}
-@media (max-width: 1291px){
     #contact {
-        display: flex;
-        align-items: flex-start;
         flex-direction: column;
-        justify-content: flex-start;
         margin-top: 0px;
     }
     #contact #form-section {
         width: 70%;
-        margin: 40px auto;
+        margin: 40px 10px;
     }
     #contact #map {
         width: 70%;
@@ -294,6 +326,99 @@ textarea {
     }
     #form-section input,
 textarea {
-    width: 250px;
+    width: 170px;
+    margin-left: 30px;
+}
+#form-section table tr td label{
+    padding: 8px 5px;
+    font-size: 15px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+#form-section #btn {
+    left: 20%;
+}
+}
+@media(min-width:801px) and (max-width: 1000px)
+{
+    #nav-bar{
+        flex-direction: column;
+        height: 80px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #nav-bar #logo{
+        margin: 10px auto;
+    }
+    #nav-bar #nav-link{
+        margin:0px auto;
+    }
+    #nav-bar #nav-link a{
+    margin: 10px 20px;
+    }
+    #header-banner{
+        height: 300px;
+    }
+    #header h1 {
+        font-size: 20px;
+    }
+    #Quits p{
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+    }
+    #contact {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #contact #form-section {
+        width: 70%;
+        margin: 40px 10px;
+    }
+    #contact #map {
+        width: 70%;
+        height: 300px;
+        margin: 40px auto;
+
+    }
+    #form-section h1, #form-section table tr td,#form-section table{
+        padding: 0px;
+        margin: 0px;
+    }
+    #form-section table{
+        margin-top: 20px;
+    }
+    #form-section input,
+     textarea {
+        width: 280px;
+        margin-left: 30px;
+    }
+}
+@media (min-width:1001px) and (max-width: 1291px){
+    #contact {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #contact #form-section {
+        width: 70%;
+        margin: 40px 10px;
+    }
+    #contact #map {
+        width: 70%;
+        height: 300px;
+        margin: 40px auto;
+
+    }
+    #form-section h1, #form-section table tr td,#form-section table{
+        padding: 0px;
+        margin: 0px;
+    }
+    #form-section table{
+        margin-top: 20px;
+    }
+    #form-section input,
+textarea {
+    width: 280px;
+    margin-left: 30px;
 }
 }

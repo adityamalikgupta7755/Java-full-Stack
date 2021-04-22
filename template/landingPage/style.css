@@ -4,10 +4,9 @@
 }
 #nav-bar{
     background-color: black;
-    height: 50px;
+    /* height: 50px; */
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
     
@@ -21,8 +20,8 @@
     margin-left: 10px;
 }
 #nav-bar nav{
-    /* margin-right: 20px; */
     display: flex;
+    padding: 10px 0;
     flex-direction: row;
 }
 #nav-bar nav a{
@@ -35,12 +34,14 @@
 /* Banner section */
 #Main-content{
     background: white url('img/group-bg.jpg') no-repeat scroll center;
+    width: 100%;
     height: 100vh;
     background-size: cover;
 }
 #Main-content #Main-content-wrapper{
     /* border: 2px solid blue; */
     display: flex;
+    /* position: relative; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -48,8 +49,8 @@
     height: inherit;
     background-color: rgba(0,0,0,0.4);
 }
-#Main-content-wrapper h2{
-    font-size: 40px;
+#Main-content-wrapper h1{
+    font-size: 4em;
 }
 #Main-content-wrapper p{
     font-size: 20px;
@@ -83,18 +84,31 @@ footer{
 }
 
 
-@media (max-width:700px)
-{
+@media  (max-width: 700px) {
     #nav-bar{
-     height: 80px;
+     /* height: 80px; */
      flex-direction: column;
-     /* flex-wrap: wrap; */
      align-items: center;
      justify-content: center;
     
     }
+    #nav-bar h2{
+        margin-top: 30px;
+    }
     #nav-bar nav{
-    /* flex-direction: column; */
-    margin: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    }
+    #Main-content-wrapper h1{
+        font-size: 1.2em;
+    }
+    #Main-content-wrapper p{
+        font-size: .8em;
+    }
+    #Main-content-wrapper button{
+        padding: 7px 12px;
+        font-size: 1em;
     }
 }

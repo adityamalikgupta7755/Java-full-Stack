@@ -17,7 +17,7 @@ header{
 header h1{
     text-align: center;
     color: #fff;
-    font-size: 40px;
+    font-size: 4em;
     padding-top: 13px;
 }
 /* navigation bar */
@@ -35,10 +35,11 @@ nav{
 }
 nav a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.5em;
     margin: 0px auto; 
     color: white;
 }
+
 /* courses section */
 #card-section{
     display: flex;
@@ -71,7 +72,7 @@ nav a{
     transition: all 2s linear;
 }
 .card:hover .image{
-    height: 250px;
+    height: 220px;
     width: 225px; 
     margin: 10px 38px;
 }
@@ -146,9 +147,9 @@ nav a{
     transform: perspective(400px) scale(1.2, 1.2);
 }
 .News-card .content{
-    border: 1px solid blue;
+    border-top: 1px solid blue;
     height: 150px;
-    border-radius: 0px 0px 38px 5px;
+    margin-bottom: 10px;
     overflow: hidden;
 }
 .News-card .content p{
@@ -156,6 +157,9 @@ nav a{
     font-size: 20px;
     padding: 10px 30px;
 }
+
+
+
 footer{
     border-radius:  0px 0px 45px 45px;
     background-image: radial-gradient(circle, #4827a6, #4736b6, #4444c6, #3f52d6, #3860e6, #365de0, #355ada, #3357d4, #3443b7, #31309b, #2c1c80, #240766);
@@ -175,7 +179,7 @@ footer{
     
 }
  #AboutUs-Section .Aboutus{
-     position: relative;
+    position: relative;
     border: 2px solid rgb(163, 6, 6);  
     height: 400px;  
     width: 100%;
@@ -184,7 +188,7 @@ footer{
     box-shadow: 0 0 10px blueviolet;
 }
  .Aboutus .img-section{
-    height: 99%;
+    height: 100%;
     width: 28%;
     border-radius: 36px 0px 0px 36px;
  }  
@@ -214,12 +218,12 @@ footer{
  .content h1{
     text-align: center;
     margin-top: 20px;
-    font-size:40px ;
+    font-size: 4em;
 } 
  .content p{
     text-align: justify;
     margin-top: 20px;
-    font-size:20px ;
+    font-size: 1.5em;
     padding: 0px 20px;
 } 
 /* gallery section */
@@ -246,8 +250,8 @@ footer{
     border-radius: 30px 30px 10px 10px;
 }
 #gallery-Section figcaption{
-    font-size: 20px;
-    margin: 23px 112px;
+    font-size: 1.5em;
+    margin: 23px 111px;
 }
 /* contact us */
 #contact{
@@ -283,6 +287,33 @@ footer{
     margin-bottom: 20px;
 }
 @media (max-width:700px){
+    header h1{
+        font-size: 1.3em;
+    }
+    nav a{
+        font-size: 1em;
+        padding: 5px;
+    }
+    nav a{
+        margin: 0px 10px;
+    }
+    #card-section .card{
+        margin: 20px auto;
+    }
+    .News-card
+    {
+        margin: 50px 10px;
+    }
+    .News-card .img-section{
+        height: 200px;  
+    }
+    .News-card .content p{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+    #AboutUs-Section .Aboutus{
+        height: 300px;
+    }
     .Aboutus .img-section{
         width: 40%;
     }
@@ -293,23 +324,35 @@ footer{
         width: 60%;
         left: 40%;
     }
+    .content h1{
+        font-size: 1.3em;
+    } 
+    .content p{
+        font-size: .8em;
+    } 
     .Aboutus .left{
         left: 0%;}
-    nav a{
-        margin: 0px 25px;
+    
+    #gallery-Section figcaption{
+        font-size: 1em;
+        margin: 23px 108px;
     }
     #contact{   
-        width: 400px;
+        width:90%;
+        margin: 30px auto;
+    }
+    #contact h1{
+        font-size: 1.5em;
     }
     #contact label{
-        margin: 0px 10px;
+        margin: 0px 8px;
+        font-size: 15px;
     }
     #contact input, textarea{  
-        width: 200px;
+        width: 170px;
     }
     #contact .btn{
         width: 200px;
-        margin-left: 100px;
-        
+        margin-left: 50px;  
     }
 }
