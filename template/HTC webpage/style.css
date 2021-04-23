@@ -1,3 +1,8 @@
-.carousel-item img{
-    height: 20%; 
+.card .icon{
+    width: 120px;
+    height: 153px;
+    margin: auto;
+}
+#Product .card .pro{
+    height: 200px;
 }
