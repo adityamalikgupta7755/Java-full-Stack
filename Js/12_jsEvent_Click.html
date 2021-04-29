@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event Click</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            border: 1px solid black;
+            text-align: center;
+            padding: 50px 0;
+            background-color: darkturquoise;
+        }
+        div h1{
+            font-size: 3rem;
+            font-weight: 900;
+            color: #fff;
+        }
+        div button{
+            margin: 50px 10px;
+            padding: 5px 10px;
+            outline: none;
+            font-size: 1.2rem;
+            background-color: blue;
+            color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(54, 2, 97, 0.51),
+                        0  2px 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="display">Message</h1>
+        <button onclick="goodMorning();">Good Morning</button>
+        <button onclick="goodAfternoon();">Good After-Noon</button>
+        <button onclick="goodEvening();">Good Evening</button>
+    </div>
+
+
+
+    <!-- Script -->
+    <script>
+        let display = document.querySelector('#display');
+
+        let goodMorning=()=>
+        {
+            display.innerText='Good Morning';
+            display.style.color='red';
+        }
+        let goodAfternoon=()=>
+        {
+            display.innerText='Good After Noon';
+            display.style.color='green';
+        }
+        let goodEvening=()=>
+        {
+            display.innerText='Good Evening';
+            display.style.color='yellow';
+        }
+    </script>
+</body>
+</html>

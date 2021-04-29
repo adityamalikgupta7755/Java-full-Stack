@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestedObject</title>
+</head>
+<body>
+
+
+    <script>
+        let emp ={
+            name :'Aditya',
+            age : 23,
+            dgen : 'Sr .Developer',
+            salary : 200000,
+            address :{
+                street :'Church street',
+                LandMark : 'apposit to SBI ATM',
+                city : 'Bangalore',
+                state : 'Karnatake',
+
+            },
+            hobbies :{
+                reghobbies :{
+                    id : 1,
+                    rhobbies:['Mix color','Drinking'],
+                },
+                Occhobbies :{
+                    id :2,
+                    Ohobbies :['Coding','Reading'],
+                }
+            },
+        };
+
+        console.log(emp.address);
+        console.log(emp.address.city);
+
+        // De-Structuring
+
+        let{street,city} = emp.address;
+        console.log(street);
+        let{reghobbies} = emp.hobbies.reghobbies;
+        console.log(reghobbies);
+    </script>
+</body>
+</html>

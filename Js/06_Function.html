@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function </title>
+</head>
+<body>
+    
+
+    <script>
+        function addNumber()
+        {
+            let a = 10;
+            let b = 20;
+            console.log(a+b);
+        }
+        addNumber();
+        let subnumber = function()
+        {
+            let a = 20;
+            let b = 10;
+            console.log(a-b);
+        }
+        subnumber();
+
+        let multiplyNumber =()=>
+        {
+            let a = 10;
+            let b = 20;
+            console.log(a*b);
+        }
+        multiplyNumber();
+
+        let addNum =(a, b)=>
+        {
+            let result = a+b;
+            console.log(result);
+        }
+
+        addNum(); // NaN
+        addNum(10,20);
+        addNum(10);
+        addNum(10,"abc"); //"10abc"
+        addNum(10,"abc",10, 15 ,25);
+
+
+    </script>
+</body>
+</html>

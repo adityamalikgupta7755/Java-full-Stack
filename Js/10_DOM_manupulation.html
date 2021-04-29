@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manupulation</title>
+</head>
+<body>
+<h1 id="abc">Welecome to my web</h1>   
+<h1 class="h1">Welecome to my web</h1> 
+<h1 class="h1">Welecome to my web</h1> 
+    
+<!-- script -->
+<script>
+    let htmldoc =document;
+    console.log(htmldoc);
+
+    let headTag =document.head;
+    console.log(headTag);
+
+    let bodyTag =document.body;
+    console.log(bodyTag);
+
+    // let headingTag =document.body.h1;
+    // console.log(headingTag);// undefine
+
+
+    //getElementById
+    let headingTag =document.getElementById('abc');
+    console.log(headingTag);
+
+    //getElementByTagName
+    let headingTag_1 =document.getElementsByTagName('h1');
+    console.log(headingTag_1);
+
+    //getElementsByClassName
+    let headingTag_2 =document.getElementsByClassName('h1')
+    console.log(headingTag_2);
+
+    //Query selector
+    let headingTag_3 = document.querySelector('#abc');
+    console.log(headingTag_3);
+</script>
+</body>
+</html>

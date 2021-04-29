@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    
+
+    <script>
+        let Sum=(a, b)=>
+        {
+            return a+b;
+        }
+        let mul=(a, b)=>
+        {
+            return a*b;
+        }
+        let Sub=(a, b)=>
+        {
+            return a-b;
+        }
+        let div=(a, b)=>
+        {
+            return a/b;
+        }
+
+        let calc =(a,b, callfun)=>
+        {
+            let result =0;
+            result=callfun(a,b);
+            return result;
+        }
+
+        let output = calc(10,25,Sum);
+        console.log(output);
+
+        let output_1 = calc(10,25,mul);
+        console.log(output_1);
+
+        let output_2 = calc(100,25,Sub);
+        console.log(output_2);
+
+        let output_3 = calc(10,25,div);
+        console.log(output_3);
+
+    </script>
+</body>
+</html>

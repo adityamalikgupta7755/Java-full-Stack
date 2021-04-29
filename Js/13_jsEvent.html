@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event Click</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            border: 1px solid black;
+            text-align: center;
+            padding: 50px 0;
+            background-color: darkturquoise;
+        }
+        div h1{
+            font-size: 3rem;
+            font-weight: 900;
+            color: #fff;
+        }
+        div button{
+            margin: 50px 10px;
+            padding: 5px 10px;
+            outline: none;
+            font-size: 1.2rem;
+            background-color: blue;
+            color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(54, 2, 97, 0.51),
+                        0  2px 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="display">Message</h1>
+        <button id="gmbtn">Good Morning</button>
+        <button id="gaftbtn">Good After-Noon</button>
+        <button id="gevbtn">Good Evening</button>
+    </div>
+
+
+
+    <!-- Script -->
+    <script>
+        
+
+        let displaySms=(message, color)=>
+        {
+            let display = document.querySelector('#display');
+            display.innerText=message;
+            display.style.color=color;
+        }
+        let gmbtn = document.querySelector('#gmbtn');
+        gmbtn.addEventListener('click',function(){
+            displaySms('Good Morning','orange');
+        });
+        let gaftbtn = document.querySelector('#gaftbtn');
+        gaftbtn.addEventListener('click',function(){
+            displaySms('Good Afternoon','Yellow');
+        });
+        let gevbtn = document.querySelector('#gevbtn ');
+        gevbtn.addEventListener('click',function(){
+            displaySms('Good Evening','blue');
+        });
+    </script>
+</body>
+</html>
