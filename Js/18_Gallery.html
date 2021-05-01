@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery </title>
+    <style>
+        #card {
+            width: 400px;
+            height: 300px;
+            border: 10px solid #fff;
+            border-radius: 10px;
+            margin:50px auto;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.432),
+                0 2px 8px rgba(0, 0, 0, 0.632);
+        }
+        #card img{
+            width: inherit;
+            height: 80%;
+        }
+        #card #btn-sec{
+            margin:10px 0;
+        }
+        #card #btn-sec .btn{
+            background-color: blue;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 0 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card">
+            <img src="img/nature1.jpg" alt="" id="img-el">
+        <div id="btn-sec">
+            <button id="nat1" class="btn">Nature 1</button>
+            <button id="nat2" class="btn">Nature 2</button>
+            <button id="nat3" class="btn">Nature 3</button>
+            <button id="nat4" class="btn">Nature 4</button>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        let nat1 = document.querySelector('#nat1');
+        let nat2 = document.querySelector('#nat2');
+        let nat3 = document.querySelector('#nat3');
+        let nat4 = document.querySelector('#nat4');
+        let imgtag =document.querySelector('#img-el');
+
+        nat1.addEventListener('click' ,function(){
+            imgtag.setAttribute('src','img/nature1.jpg')
+        });
+        nat2.addEventListener('click' ,function(){
+            imgtag.setAttribute('src','img/nature2.jpg')
+        });
+        nat3.addEventListener('click' ,function(){
+            imgtag.setAttribute('src','img/nature3.jpg')
+        });
+        nat4.addEventListener('click' ,function(){
+            imgtag.setAttribute('src','img/nature4.jpg')
+        });
+    </script>
+</body>
+
+</html>

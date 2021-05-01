@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Visible</title>
+    <link rel="stylesheet" href="MdBS/css/bootstrap.css">
+    <link rel="stylesheet" href="MdBS/css/mdb.css">
+    <style>
+        input[type='checkbox']
+        {
+            margin-left: -3px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card ">
+            <div class="card-header bg-secondary text-light text-center">
+              <h3>Password Box</h3>
+            </div>
+            <div class="card-body bg-light">
+             <div class="input-group mb-3">
+                 <div class="input-group-text">
+                     <input type="checkbox" class="form-check-input mt-0" id="checkBox">
+                 </div>
+                 <input type="password" class="from-control" id="pw">
+             </div>
+            </div>
+            <div class="card-footer bg-secondary text-light text-center">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="MdBS/js/jquery.js"></script>
+    <script src="MdBS/js/popper.js"></script>
+    <script src="MdBS/js/bootstrap.js"></script>
+    <script src="MdBS/js/mdb.js"></script>
+    <script>
+      let checkBoxTag=document.querySelector('#checkBox');
+      let pwTag=document.querySelector('#pw');
+      checkBoxTag.addEventListener('change',function(){
+          let p= pwTag.getAttribute('type');
+
+          if(p === 'password')
+          {
+              pwTag.setAttribute('type','text');
+          }
+          else
+          {
+              pwTag.setAttribute('type','password');
+          }
+      });
+    </script>
+</body>
+</html>
