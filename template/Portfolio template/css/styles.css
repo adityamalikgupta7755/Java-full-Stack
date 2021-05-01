@@ -1,0 +1,51 @@
+html,body{
+    height: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.header-page {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+
+}
+
+.gradien{
+     background-image: linear-gradient(to right top, #0037ff, #2a41f5, #3d49ea, #4a51df, #5558d4, #5654c6, #564fb8, #554baa, #4b3b97, #422b84, #381a72, #2e0760);}
+.hover-or:hover{
+    background-color: #ffa900;
+    color: #fff;
+}
+.hover-gr:hover{
+    background-color: #00b74a;
+    color: #fff;
+}
+.feature ul{
+    list-style: none;
+    padding-left: 2rem;
+}
+.feature ul li{
+    padding-left: 2rem;
+    background-image: url('../img/check.svg');
+    background-repeat: no-repeat;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.icon{
+    background-color: #0037ff;
+    height: 5rem;
+    width: 5rem;
+    color: #fff;
+    font-size: 1.75rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    background-color: whitesmoke;
+}
+.gallery img{
+    border-radius: 7%;
+}
