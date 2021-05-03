@@ -1,0 +1,74 @@
+html,body{
+    height: 100%;
+    font-size: 1rem;
+}
+.logo{
+    width: 150px;
+    height: 60px;
+}
+    
+.banner{
+    margin-top: 58px;
+}
+.banner img{
+    height: 36rem;
+}
+.arrow{
+    margin: 0px 0px  0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.gradients{
+    background-image: linear-gradient(to right top, #ff00d3, #f466ea, #ea92f9, #e5b5ff, #e7d4ff, #e9d2fc, #ebd1f8, #edcff5, #f6aae1, #ff80bb, #ff4f85, #ff0043);
+  }
+.menu-img{
+       height: 15rem;
+      width: 15rem; 
+      border-radius: 100%;
+}
+.menu-img img{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    transition: all 500ms linear;
+}
+.menu-img:hover img{
+    filter: grayscale(80%);
+}
+.over p{
+    border-radius: 20%;
+    background-color: rgba(0, 0, 0, 0.611);
+}
+
+.sub-menu-border_1{
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius: 20px 5px 5px 20px ;
+    
+}
+.sub-menu-border_2{
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    border-radius:5px 20px  20px 5px;
+    
+}
+
+@media  (max-width: 900px) 
+{
+    .banner img{
+        height: 20rem;
+    }
+    .menu-img{
+        margin: 0 auto;
+    }
+}
+@media  (max-width: 600px) 
+{
+.fs-size{
+    font-size: .7rem;
+    font-weight: 500;
+}
+.card-size{
+    height: 280px;
+}
+.btn-modify{
+    font-size: .5rem;
+}
+}
