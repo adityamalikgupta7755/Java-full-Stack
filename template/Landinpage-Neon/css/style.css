@@ -7,7 +7,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: radial-gradient(#768aff,#0f228a);
+    background: radial-gradient(#252527,#000000);
     color: #fff;
     position: relative;
 }
@@ -29,7 +29,7 @@
 .content h2{
     font-size: 4rem;
     margin: 10px 0;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .content p{
     font-size: 1rem;
@@ -82,7 +82,7 @@ span::after{
     right: 0;
     bottom: 0;
     width: 50%;
-    max-width: 680px;
+    max-width: 600px;
     max-height: 95%;
 }
 .search-icon{
@@ -95,7 +95,7 @@ span::after{
 @media  (max-width: 500px) {
     .content{
         max-width: 70%;
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
     .content h1{
         font-size: 2rem;
@@ -106,18 +106,26 @@ span::after{
     .content p{
         font-size: .8rem;
     }
-  
     span{
         position: absolute;
         left: -80px;
     }
-    .search-icon{
+    .model-img{
         bottom: 0%;
+        z-index: 2;
+    }
+    .search-icon{
+        bottom: 10%;
         left: 5%;
         margin-bottom: 20px;
     }
     .link{
         font-size: .7rem;
         margin: 0px 0;
+    }
+    svg{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
     }
 }
